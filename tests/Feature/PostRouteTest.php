@@ -13,4 +13,9 @@ class PostRouteTest extends TestCase
     use DatabaseMigrations;
 
     // TODO: 針對 API route 撰寫測試
+
+    public function testGetPosts()
+    {
+
+    }
 }
