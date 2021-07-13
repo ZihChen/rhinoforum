@@ -26,7 +26,7 @@ class GetPostsRequest extends APIRequest
             'limit' => 'required|integer',
             'user_id' => 'integer',
             'start_date' => 'date',
-            'end_date' => 'date|after:start_date',
+            'end_date' => 'date',
         ];
     }
 }

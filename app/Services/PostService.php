@@ -41,7 +41,7 @@ class PostService
             if (!empty($keyword)) {
                 $query_builder = empty($query_builder)
                     ? $this->post->where('content', 'like', '%' . $keyword . '%')
-                    : $query_builder->where('category', 'like', '%' . $keyword . '%');
+                    : $query_builder->where('content', 'like', '%' . $keyword . '%');
             }
 
             if (!empty($start_date) && !empty($end_date)) {
