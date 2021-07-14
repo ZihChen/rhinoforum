@@ -48,7 +48,7 @@ class PostController extends Controller
                 'current_page' => $page,
             ]);
         } catch (\Exception $e) {
-
+            throw new \Exception($e->getMessage(), $e->getCode());
         }
     }
 }
